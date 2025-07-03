@@ -1,27 +1,29 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
 import Country from "./components/pages/Country";
 import Contact from "./components/pages/Contact";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Error from "./components/pages/Error";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import AppLayout from "./components/layout/AppLayout";
 
 function App() {
-  return (
-    <div className="flex flex-col min-h-screen">
-      <Navbar />
-      <main className="flex-grow">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/country" element={<Country />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </main>
-      <Footer />
-    </div>
-  );
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <AppLayout />,
+      errorElement: <Error />,
+      children: [
+        { path: "/", element: <Home /> },
+        { path: "/about", element: <About /> },
+        { path: "/country", element: <Country /> },
+        { path: "/contact", element: <Contact /> },
+      ],
+    },
+    { path: "*", element: <Error /> },
+  ]);
+
+  return <RouterProvider router={router} />
 }
 
 export default App;
