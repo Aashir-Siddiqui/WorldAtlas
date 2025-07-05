@@ -1,24 +1,33 @@
 import React from 'react'
 import { Button } from "../ui/moving-border"
 import { NavLink } from 'react-router-dom';
-import { BackgroundBeams } from "../ui/background-beams";
+import { Spotlight } from "../ui/spotlight-new";
+import CardHoverEffectDemo from '../cards/card';
+import { PointerHighlight } from '../ui/pointer-highlight';
 
 export default function Home() {
   return (
-    <div className="relative flex h-[40rem] w-full overflow-hidden bg-black/[0.96] antialiased md:items-center md:justify-center">
-      <div className="p-4 w-full text-center relative z-10">
-        <h1 className='text-neutral-300 mt-40 md:mt-0 text-3xl md:text-7xl font-bold'>EXPLORE WORLDATLAS</h1>
-        <p className='text-neutral-300 text-base md:text-lg max-w-2xl mx-auto my-10 font-normal'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus assumenda hic velit eligendi consectetur quibusdam sit molestias iusto, sint iste quis earum quidem voluptatem minus in delectus eveniet temporibus? Ipsam eum laboriosam iste! Blanditiis, sequi fugit maiores deserunt rerum aliquid.</p>
-        <NavLink to="/country">
-          <Button
-            borderRadius="10 rem"
-            className="bg-black text-neutral-300 p-2 cursor-pointer"
-          >
-            EXPLORE COUNTRIES
-          </Button>
-        </NavLink>
+    <>
+      <div className="relative flex h-[40rem] w-full overflow-hidden bg-black antialiased md:items-center md:justify-center">
+        <Spotlight />
+        <div className="p-4 w-full text-center relative z-10">
+          <h1 className="text-neutral-300 text-[28px] md:text-7xl mt-40 font-bold flex items-center justify-center gap-1 md:gap-3">
+            EXPLORE <PointerHighlight><span>WORLDATLAS</span></PointerHighlight>
+          </h1>
+          <p className='text-neutral-300 text-base md:text-lg max-w-3xl mx-auto my-10 font-normal text-center'>Discover the world like never before with WorldAtlas, your ultimate guide to global geography and culture. Explore detailed information about every country, from vibrant capitals to unique traditions, all presented in an easy-to-navigate format. Whether you're a traveler, student, or curious explorer, WorldAtlas brings the world to your fingertips with stunning visuals and up-to-date data.</p>
+          <NavLink to="/country">
+            <Button
+              borderRadius="10rem"
+              className="bg-black text-neutral-300 p-2 cursor-pointer"
+            >
+              EXPLORE COUNTRIES
+            </Button>
+          </NavLink>
+        </div>
       </div>
-      <BackgroundBeams />
-    </div>
+      <div className='bg-black py-40'>
+        <CardHoverEffectDemo />
+      </div>
+    </>
   )
 }
