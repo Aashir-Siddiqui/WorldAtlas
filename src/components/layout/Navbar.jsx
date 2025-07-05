@@ -6,9 +6,9 @@ import { NavLink, Outlet } from "react-router-dom";
 export default function Navbar({ className }) {
     const [active, setActive] = useState(null);
     return (
-        <nav className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}>
+        <nav className={cn("fixed top-10 inset-x-0 max-w-2xl mx-5 z-50 md:mx-auto", className)}>
             <Menu setActive={setActive}>
-                <div className=" flex items-center justify-between gap-10">
+                <div className=" flex items-center justify-between gap-6 md:gap-10">
                     <NavLink to="/">
                         <MenuItem setActive={setActive} active={active} item="Home" />
                     </NavLink>
