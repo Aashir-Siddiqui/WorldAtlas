@@ -16,7 +16,7 @@ export default function Navbar({ className }) {
                         <MenuItem setActive={setActive} active={active} item="About" />
                     </NavLink>
                     <NavLink to="/country">
-                        <MenuItem setActive={setActive} active={active} item="Country" />
+                        <MenuItem setActive={setActive} active={active} item="Countries" />
                     </NavLink>
                     <NavLink to="/contact">
                         <MenuItem setActive={setActive} active={active} item="Contact" />
