@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name": "Organisation of Islamic Cooperation (OIC)",
+        "founded": 1969,
+        "members": 57,
+        "focus": "Promoting solidarity among Muslim-majority countries, advancing peace, and fostering cooperation in economic, cultural, and scientific fields.",
+        "link": "https://www.oic-oci.org",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/OIC_Logo_since_2011.svg/1280px-OIC_Logo_since_2011.svg.png"
+    },
+    {
+        "id": 2,
+        "name": "North Atlantic Treaty Organization (NATO)",
+        "founded": 1949,
+        "members": 32,
+        "focus": "Ensuring collective defense and security cooperation among member countries, primarily in North America and Europe.",
+        "link": "https://www.nato.int",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Flag_of_NATO.svg/1024px-Flag_of_NATO.svg.png"
+    },
+    {
+        "id": 3,
+        "name": "BRICS",
+        "founded": 2006,
+        "members": 10,
+        "focus": "Enhancing economic and political cooperation among emerging economies to promote global governance reform and sustainable development.",
+        "link": "https://brics2024.mfa.gov.ru/en",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/BRICS_2025_Brazilian_chairmanship_logo.svg/800px-BRICS_2025_Brazilian_chairmanship_logo.svg.png"
+    },
+    {
+        "id": 4,
+        "name": "Group of Seven (G7)",
+        "founded": 1975,
+        "members": 7,
+        "focus": "Coordinating economic, security, and climate policies among advanced democracies to promote global stability and prosperity.",
+        "link": "https://www.g7italy.it/en/",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Participation_of_Ursula_von_der_Leyen%2C_President_of_the_European_Commission%2C_to_the_G7_Summit.jpg/1024px-Participation_of_Ursula_von_der_Leyen%2C_President_of_the_European_Commission%2C_to_the_G7_Summit.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Group of Twenty (G20)",
+        "founded": 1999,
+        "members": 20,
+        "focus": "Addressing global economic stability, climate change, and sustainable development through cooperation among major economies.",
+        "link": "https://www.g20.org/en/",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/62/G20_2025_Logo_SouhtAfrica.png"
+    },
+    {
+        "id": 6,
+        "name": "United Nations (UN)",
+        "founded": 1945,
+        "members": 193,
+        "focus": "Maintaining international peace, promoting human rights, and fostering global cooperation on economic, social, and environmental issues.",
+        "link": "https://www.un.org",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Flag_of_the_United_Nations.svg/1024px-Flag_of_the_United_Nations.svg.png"
+    }
+]
