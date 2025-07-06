@@ -14,13 +14,13 @@ export default function Footer() {
     };
 
     return (
-        <footer className="relative bottom-0 z-50 w-full bg-black/[0.95] text-white py-8 px-6 md:px-10">
+        <footer className="relative bottom-0 z-40 w-full bg-black/[0.95] text-white py-8 px-6 md:px-10">
             <div className="container mx-auto max-w-7xl">
                 <div className="flex flex-col md:flex-row gap-8">
                     <div className="flex-1 flex flex-col items-start justify-center">
-                        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">World Atlas</h1>
+                        <h1 className="text-4xl md:text-5xl font-semibold text-white mb-4">WorldAtlas</h1>
                         <div className="text-sm text-neutral-100 mb-2">
-                            Copyright © 2025 World Atlas
+                            Copyright © 2025 WorldAtlas
                         </div>
                         <div className="text-sm text-white flex items-center">
                             Made with <FaHeart className="text-blue-500 mx-1" /> by Aashir Siddiqui
