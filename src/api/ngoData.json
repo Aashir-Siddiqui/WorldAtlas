@@ -1,0 +1,74 @@
+[
+    {
+        "id": "550e8400-e29b-41d4-a716-446655440001",
+        "name": "WHO",
+        "official": "World Health Organization",
+        "headquarters": "Geneva",
+        "reach": 7800000000,
+        "link": "https://en.wikipedia.org/wiki/World_Health_Organization"
+    },
+    {
+        "id": "550e8400-e29b-41d4-a716-446655440002",
+        "name": "UNICEF",
+        "official": "United Nations Children's Fund",
+        "headquarters": "New York City",
+        "reach": 190000000,
+        "link": "https://en.wikipedia.org/wiki/UNICEF"
+    },
+    {
+        "id": "550e8400-e29b-41d4-a716-446655440003",
+        "name": "Red Cross",
+        "official": "International Committee of the Red Cross",
+        "headquarters": "Geneva",
+        "reach": 160000000,
+        "link": "https://en.wikipedia.org/wiki/International_Committee_of_the_Red_Cross"
+    },
+    {
+        "id": "550e8400-e29b-41d4-a716-446655440004",
+        "name": "Greenpeace",
+        "official": "Greenpeace International",
+        "headquarters": "Amsterdam",
+        "reach": 3000000,
+        "link": "https://en.wikipedia.org/wiki/Greenpeace"
+    },
+    {
+        "id": "550e8400-e29b-41d4-a716-446655440005",
+        "name": "Amnesty",
+        "official": "Amnesty International",
+        "headquarters": "London",
+        "reach": 10000000,
+        "link": "https://en.wikipedia.org/wiki/Amnesty_International"
+    },
+    {
+        "id": "550e8400-e29b-41d4-a716-446655440006",
+        "name": "MSF",
+        "official": "Médecins Sans Frontières",
+        "headquarters": "Geneva",
+        "reach": 45000000,
+        "link": "https://en.wikipedia.org/wiki/Médecins_Sans_Frontières"
+    },
+    {
+        "id": "550e8400-e29b-41d4-a716-446655440007",
+        "name": "Oxfam",
+        "official": "Oxfam International",
+        "headquarters": "Nairobi",
+        "reach": 25000000,
+        "link": "https://en.wikipedia.org/wiki/Oxfam"
+    },
+    {
+        "id": "550e8400-e29b-41d4-a716-446655440008",
+        "name": "CARE",
+        "official": "CARE International",
+        "headquarters": "Geneva",
+        "reach": 90000000,
+        "link": "https://en.wikipedia.org/wiki/CARE_(relief_agency)"
+    },
+    {
+        "id": "550e8400-e29b-41d4-a716-446655440009",
+        "name": "WWF",
+        "official": "World Wide Fund for Nature",
+        "headquarters": "Gland",
+        "reach": 5000000,
+        "link": "https://en.wikipedia.org/wiki/World_Wide_Fund_for_Nature"
+    }
+]
