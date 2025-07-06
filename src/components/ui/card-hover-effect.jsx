@@ -1,16 +1,15 @@
-// ../ui/card-hover-effect.jsx
 import { cn } from "../lib/utils";
-import { AnimatePresence, motion } from "framer-motion"; // Updated import
+import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 
 export const HoverEffect = ({ items, className }) => {
   let [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <div className={cn("grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10", className)}>
+    <div className={cn("grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3", className)}>
       {items.map((item, idx) => (
         <div
-          key={item?.link || idx} // Fallback to index if link is undefined
+          key={item.id || idx}
           className="relative group block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
@@ -28,7 +27,7 @@ export const HoverEffect = ({ items, className }) => {
           </AnimatePresence>
           <Card>
             <CardTitle>{item.title}</CardTitle>
-            <CardDescription>{item.description}</CardDescription>
+            <CardDescription official={item.official} headquarters={item.headquarters} reach={item.reach} />
             <a
               href={item.link}
               target="_blank"
@@ -67,10 +66,12 @@ export const CardTitle = ({ className, children }) => {
   );
 };
 
-export const CardDescription = ({ className, children }) => {
+export const CardDescription = ({ className, official, headquarters, reach }) => {
   return (
-    <p className={cn("mt-8 text-neutral-300 tracking-wide leading-relaxed text-sm", className)}>
-      {children}
-    </p>
+    <div className={cn("mt-8 text-neutral-300 tracking-wide leading-relaxed text-sm flex flex-col gap-2", className)}>
+      <p>Official: {official}</p>
+      <p>Headquarters: {headquarters}</p>
+      <p>Reach: {reach}</p>
+    </div>
   );
 };
