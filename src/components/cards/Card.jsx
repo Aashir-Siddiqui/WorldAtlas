@@ -6,7 +6,14 @@ export default function CardHoverEffectDemo() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-8">
-      <h1 className="text-3xl sm:text-5xl font-bold text-neutral-300 text-center mb-8">World Top <span className='text-blue-500'>NGOs</span></h1>
+      <div className="max-w-4xl mx-auto my-14 md:my-24">
+        <h1 className="text-3xl sm:text-5xl font-bold text-neutral-300 text-center">World Top <span className='text-blue-500'>NGOs</span></h1>
+        <p
+          className="text-neutral-300 text-base leading-6  md:text-lg mt-6 font-normal text-center"
+        >
+          Discover leading non-governmental organizations driving positive change through humanitarian aid, environmental conservation, and social empowerment worldwide.
+        </p>
+      </div>
       <HoverEffect
         items={ngoData.map((ngo, idx) => ({
           id: ngo.id || idx,
