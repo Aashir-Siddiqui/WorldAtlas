@@ -18,7 +18,7 @@ export default function SearchFilter({ search, setSearch, filter, setFilter, cou
   };
 
   return (
-    <section className="flex flex-col sm:flex-row gap-4 justify-between items-center max-w-7xl mx-auto mb-8">
+    <section className="flex flex-col sm:flex-row gap-4 justify-between items-center max-w-7xl mx-auto mb-8 px-2 sm:px-0">
       <motion.div
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
