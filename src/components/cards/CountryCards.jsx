@@ -19,6 +19,7 @@ export default function CountryCards({ country }) {
                         <h1 className="text-xl font-bold">
                             {name?.common && name.common.length > 20 ? name.common.slice(0, 20) + "..." : name?.common || 'N/A'}
                         </h1>
+                        <p className="text-xs">Official: {name?.official && name.official.length > 30 ? name.official.slice(0, 20) + "..." : name?.official || 'N/A'}</p>
                         <p className="text-xs">Capital: {capital?.[0] || 'N/A'}</p>
                         <p className="text-xs">Region: {region || 'N/A'}</p>
                         <p className="text-xs">Population: {population ? population.toLocaleString() : 'N/A'}</p>
@@ -26,7 +27,7 @@ export default function CountryCards({ country }) {
                             href={`https://en.wikipedia.org/wiki/${name?.common || ''}`}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-blue-500 hover:underline mt-3 text-xs inline-block"
+                            className="text-blue-500 hover:underline mt-2 text-xs inline-block"
                         >
                             Learn More
                         </a>
