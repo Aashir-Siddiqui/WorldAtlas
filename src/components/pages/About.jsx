@@ -9,7 +9,7 @@ export default function About() {
   return (
     <div className="bg-black min-h-screen">
       <BackgroundBeamsWithCollision>
-        <div className="w-full bg-gradient-to-b from-slate-950 to-black/95 antialiased pt-20 pb-40 px-6 md:px-8 flex flex-col">
+        <div className="w-full bg-gradient-to-b from-slate-950 to-black/95 antialiased pt-20 pb-40 px-5 md:px-8 flex flex-col">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -19,7 +19,7 @@ export default function About() {
             <h1 className="text-neutral-300 text-4xl md:text-6xl font-bold">
               Discover the World with WorldAtlas
             </h1>
-            <p className="text-neutral-300 text-lg md:text-xl mt-6 font-normal">
+            <p className="text-neutral-300 text-base sm:text-lg md:text-xl mt-6 font-normal">
               Your gateway to exploring every country’s culture, history, and geography.
             </p>
             <Link to="/country">
@@ -31,19 +31,19 @@ export default function About() {
               </Button>
             </Link>
           </motion.div>
-          <div className="max-w-4xl mx-auto mt-16 md:mt-24">
-            <h2 className="text-neutral-300 text-2xl md:text-3xl font-semibold text-center">
+          <div className="max-w-4xl mx-auto mt-16 md:mt-24 px-2">
+            <h2 className="text-neutral-300 text-2xl md:text-3xl font-bold text-center">
               Our Mission
             </h2>
-            <p className="text-neutral-300 text-base leading-6 md:text-lg mt-6 font-normal text-center">
+            <p className="text-neutral-300 text-base leading-6 md:text-lg mt-6 font-light text-center">
               We’re on a mission to make global knowledge accessible to everyone. From the peaks of the Himalayas to the streets of Tokyo, WorldAtlas brings you detailed, reliable, and engaging information about every nation.
             </p>
           </div>
-          <div className="max-w-4xl mx-auto mt-12 md:mt-16">
-            <h2 className="text-neutral-300 text-2xl md:text-3xl font-semibold text-center">
+          <div className="max-w-4xl mx-auto mt-12 md:mt-16 px-2">
+            <h2 className="text-neutral-300 text-2xl md:text-3xl font-bold text-center">
               Who We Are
             </h2>
-            <p className="text-neutral-300 text-base leading-6 md:text-lg mt-6 font-normal text-center">
+            <p className="text-neutral-300 text-base leading-6 md:text-lg mt-6 font-light text-center">
               WorldAtlas was born from a passion for travel and curiosity about the world. Our small team of explorers, researchers, and tech enthusiasts works tirelessly to curate accurate data and stories, helping you navigate the globe from your screen.
             </p>
           </div>
