@@ -9,7 +9,7 @@ export default function CardHoverEffectDemo() {
       <div className="max-w-4xl mx-auto my-14 md:my-24">
         <h1 className="text-3xl sm:text-5xl font-bold text-neutral-300 text-center">World Top <span className='text-blue-500'>NGOs</span></h1>
         <p
-          className="text-neutral-300 text-base leading-6  md:text-lg mt-6 font-normal text-center"
+          className="text-neutral-300 text-base leading-6 md:text-lg mt-6 font-normal text-center px-2"
         >
           Discover leading non-governmental organizations driving positive change through humanitarian aid, environmental conservation, and social empowerment worldwide.
         </p>
